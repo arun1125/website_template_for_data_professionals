@@ -1,0 +1,11 @@
+{
+    "CompanyName": "Super Cool Company",
+    "Location": "Remote, World",
+    "Time": "Start Date - End Date",
+    "Title": "Title",
+    "Work": {
+        "task1": "Add what you did here",
+        "task2": "More stuff",
+        "task3": "Even More Stuff"
+    }
+}

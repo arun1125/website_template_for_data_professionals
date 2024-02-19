@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ data['tab_title'][0] }} </title>
+    <script src="https://unpkg.com/htmx.org@1.9.8"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="font-family: monospace">
+<main id = 'home' class="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
+    <section class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+        <div class="flex items-center gap-x-3 align-baseline leading-none print:hidden">
+            <a href="/"><h2 class="font-mono text-sm hover:underline">About</h2></a>
+            |
+            <a href="/writing"><h2 class="font-mono text-sm hover:underline">Writing</h2></a>
+            |
+            <a href="/readinglist"><h2 class="font-mono text-sm hover:underline">Reading list</h2></a>
+        </div>
+
+        <ul>
+            {% for link in links %}
+            <li> 
+                <a 
+                href="{{ link }}" 
+                style="font-family: monospace"
+                class="inline-flex items-center rounded-md border px-2 py-0.5 font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/60 align-middle text-xs">
+                 + {{ link }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        
+    </section>        
+    </main>
+    
+</body>
+</html>
