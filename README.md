@@ -1,5 +1,8 @@
 # A WEBSITE TEMPLATE FOR DATA PROFESSIONALS TO SHOWCASE THEIR WORK 
 
+# you can run in dev
+uvicorn main:app --reload
+
 # About
 In the about folder just fill in the details 
 
