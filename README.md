@@ -30,4 +30,5 @@ Please name your readinglists readinglists.txt lol
 
 # Deploying your site
 I used Heroku and their simple deployment process - you can follow their tutorial :) 
+https://devcenter.heroku.com/articles/getting-started-with-python
 It costs < $10 a month! 
